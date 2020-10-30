@@ -10,7 +10,7 @@
 #define ADC_CONFIG_H_
 
 
-#include "DIO.h"
+#include "../DIO/DIO.h"
 
 typedef struct ADC_Cfg_s{
 	uint8_t u8_Channel_Number;

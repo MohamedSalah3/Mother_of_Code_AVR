@@ -107,6 +107,21 @@
 #define SPDR		*((reg_type8_t)(0x2F))
 #define SPSR		*((reg_type8_t)(0x2E))
 #define SPCR        *((reg_type8_t)(0x2D))
+/*ADC*/
+#define ADMUX       *((reg_type8_t)(0x27))
+#define ADCSRA		*((reg_type8_t)(0x26))
 
+#define ADPS0   0
+#define ADPS1   1
+#define ADPS2   2
+#define ADIE    3
+#define ADIF    4
+#define ADATE   5
+#define ADSC    6
+#define ADEN    7
+
+#define ADC_DATA    *((reg_type16_t)(0x24))
+#define ADCL    *((reg_type16_t)(0x24))
+#define ADCH    *((reg_type16_t)(0x25))
 
 #endif /* REGISTERS_H_ */

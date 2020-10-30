@@ -8,12 +8,6 @@
 
 #ifndef INTERRUPTS_H_
 #define INTERRUPTS_H_
-//#include "pushButton.h"
-#include "../registers.h"
-//#include "timers.h"
-//#include "gpio.h"
-//#include "uart.h"
-//
 
 extern volatile uint8_t u8Excution_to_be_done;
 extern void timer_interrupt(void);
@@ -38,7 +32,7 @@ extern ptr_to_Fun EE_RDY;
 extern ptr_to_Fun ANA_COMP;
 extern ptr_to_Fun TWI_I2C;
 extern ptr_to_Fun SPM_RDY;
-extern void G_interrupt_Enable(void);
+ void G_interrupt_Enable(void);
 extern void G_interrupt_Disable(void);
 extern void EX_interrupt_enable2(void);
 extern volatile uint8_t u8_ovf_counter;

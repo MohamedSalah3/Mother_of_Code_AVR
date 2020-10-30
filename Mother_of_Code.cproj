@@ -25,45 +25,45 @@
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
     <ToolchainSettings>
       <AvrGcc>
-  <avrgcc.common.outputfiles.hex>True</avrgcc.common.outputfiles.hex>
-  <avrgcc.common.outputfiles.lss>True</avrgcc.common.outputfiles.lss>
-  <avrgcc.common.outputfiles.eep>True</avrgcc.common.outputfiles.eep>
-  <avrgcc.common.outputfiles.srec>True</avrgcc.common.outputfiles.srec>
-  <avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>True</avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>
-  <avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>
-  <avrgcc.compiler.optimization.level>Optimize for size (-Os)</avrgcc.compiler.optimization.level>
-  <avrgcc.compiler.optimization.PackStructureMembers>True</avrgcc.compiler.optimization.PackStructureMembers>
-  <avrgcc.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcc.compiler.optimization.AllocateBytesNeededForEnum>
-  <avrgcc.compiler.warnings.AllWarnings>True</avrgcc.compiler.warnings.AllWarnings>
-  <avrgcc.linker.libraries.Libraries>
-    <ListValues>
-      <Value>m</Value>
-    </ListValues>
-  </avrgcc.linker.libraries.Libraries>
-</AvrGcc>
+        <avrgcc.common.outputfiles.hex>True</avrgcc.common.outputfiles.hex>
+        <avrgcc.common.outputfiles.lss>True</avrgcc.common.outputfiles.lss>
+        <avrgcc.common.outputfiles.eep>True</avrgcc.common.outputfiles.eep>
+        <avrgcc.common.outputfiles.srec>True</avrgcc.common.outputfiles.srec>
+        <avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>True</avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>
+        <avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>
+        <avrgcc.compiler.optimization.level>Optimize for size (-Os)</avrgcc.compiler.optimization.level>
+        <avrgcc.compiler.optimization.PackStructureMembers>True</avrgcc.compiler.optimization.PackStructureMembers>
+        <avrgcc.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcc.compiler.optimization.AllocateBytesNeededForEnum>
+        <avrgcc.compiler.warnings.AllWarnings>True</avrgcc.compiler.warnings.AllWarnings>
+        <avrgcc.linker.libraries.Libraries>
+          <ListValues>
+            <Value>m</Value>
+          </ListValues>
+        </avrgcc.linker.libraries.Libraries>
+      </AvrGcc>
     </ToolchainSettings>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <ToolchainSettings>
       <AvrGcc>
-  <avrgcc.common.outputfiles.hex>True</avrgcc.common.outputfiles.hex>
-  <avrgcc.common.outputfiles.lss>True</avrgcc.common.outputfiles.lss>
-  <avrgcc.common.outputfiles.eep>True</avrgcc.common.outputfiles.eep>
-  <avrgcc.common.outputfiles.srec>True</avrgcc.common.outputfiles.srec>
-  <avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>True</avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>
-  <avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>
-  <avrgcc.compiler.optimization.level>Optimize (-O1)</avrgcc.compiler.optimization.level>
-  <avrgcc.compiler.optimization.PackStructureMembers>True</avrgcc.compiler.optimization.PackStructureMembers>
-  <avrgcc.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcc.compiler.optimization.AllocateBytesNeededForEnum>
-  <avrgcc.compiler.optimization.DebugLevel>Default (-g2)</avrgcc.compiler.optimization.DebugLevel>
-  <avrgcc.compiler.warnings.AllWarnings>True</avrgcc.compiler.warnings.AllWarnings>
-  <avrgcc.linker.libraries.Libraries>
-    <ListValues>
-      <Value>m</Value>
-    </ListValues>
-  </avrgcc.linker.libraries.Libraries>
-  <avrgcc.assembler.debugging.DebugLevel>Default (-Wa,-g)</avrgcc.assembler.debugging.DebugLevel>
-</AvrGcc>
+        <avrgcc.common.outputfiles.hex>True</avrgcc.common.outputfiles.hex>
+        <avrgcc.common.outputfiles.lss>True</avrgcc.common.outputfiles.lss>
+        <avrgcc.common.outputfiles.eep>True</avrgcc.common.outputfiles.eep>
+        <avrgcc.common.outputfiles.srec>True</avrgcc.common.outputfiles.srec>
+        <avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>True</avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>
+        <avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>
+        <avrgcc.compiler.optimization.level>Optimize (-O1)</avrgcc.compiler.optimization.level>
+        <avrgcc.compiler.optimization.PackStructureMembers>True</avrgcc.compiler.optimization.PackStructureMembers>
+        <avrgcc.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcc.compiler.optimization.AllocateBytesNeededForEnum>
+        <avrgcc.compiler.optimization.DebugLevel>Default (-g2)</avrgcc.compiler.optimization.DebugLevel>
+        <avrgcc.compiler.warnings.AllWarnings>True</avrgcc.compiler.warnings.AllWarnings>
+        <avrgcc.linker.libraries.Libraries>
+          <ListValues>
+            <Value>m</Value>
+          </ListValues>
+        </avrgcc.linker.libraries.Libraries>
+        <avrgcc.assembler.debugging.DebugLevel>Default (-Wa,-g)</avrgcc.assembler.debugging.DebugLevel>
+      </AvrGcc>
     </ToolchainSettings>
   </PropertyGroup>
   <ItemGroup>
@@ -122,12 +122,6 @@
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="ECUAL\SWdelay\softwareDelay.h">
-      <SubType>compile</SubType>
-    </Compile>
-    <Compile Include="ECUAL\US\timer.c">
-      <SubType>compile</SubType>
-    </Compile>
-    <Compile Include="ECUAL\US\Timer.h">
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="ECUAL\US\US.c">
@@ -214,42 +208,6 @@
     <Compile Include="MCAL\PWM\PWM_Config.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="MCAL\SPI\SPI MASTER\gpio.c">
-      <SubType>compile</SubType>
-    </Compile>
-    <Compile Include="MCAL\SPI\SPI MASTER\gpio.h">
-      <SubType>compile</SubType>
-    </Compile>
-    <Compile Include="MCAL\SPI\SPI MASTER\SPI.c">
-      <SubType>compile</SubType>
-    </Compile>
-    <Compile Include="MCAL\SPI\SPI MASTER\SPI.h">
-      <SubType>compile</SubType>
-    </Compile>
-    <Compile Include="MCAL\SPI\SPI MASTER\SPI_Config.c">
-      <SubType>compile</SubType>
-    </Compile>
-    <Compile Include="MCAL\SPI\SPI MASTER\SPI_Config.h">
-      <SubType>compile</SubType>
-    </Compile>
-    <Compile Include="MCAL\SPI\SPI SLAVE\gpio.c">
-      <SubType>compile</SubType>
-    </Compile>
-    <Compile Include="MCAL\SPI\SPI SLAVE\gpio.h">
-      <SubType>compile</SubType>
-    </Compile>
-    <Compile Include="MCAL\SPI\SPI SLAVE\SPI.c">
-      <SubType>compile</SubType>
-    </Compile>
-    <Compile Include="MCAL\SPI\SPI SLAVE\SPI.h">
-      <SubType>compile</SubType>
-    </Compile>
-    <Compile Include="MCAL\SPI\SPI SLAVE\SPI_Config.c">
-      <SubType>compile</SubType>
-    </Compile>
-    <Compile Include="MCAL\SPI\SPI SLAVE\SPI_Config.h">
-      <SubType>compile</SubType>
-    </Compile>
     <Compile Include="MCAL\Timer\timer.c">
       <SubType>compile</SubType>
     </Compile>
@@ -260,24 +218,6 @@
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="MCAL\Timer\Timer_Config.h">
-      <SubType>compile</SubType>
-    </Compile>
-    <Compile Include="MCAL\UART\UART_RECIEVE\uart.c">
-      <SubType>compile</SubType>
-    </Compile>
-    <Compile Include="MCAL\UART\UART_RECIEVE\uart.h">
-      <SubType>compile</SubType>
-    </Compile>
-    <Compile Include="MCAL\UART\UART_RECIEVE\uartconfig.h">
-      <SubType>compile</SubType>
-    </Compile>
-    <Compile Include="MCAL\UART\UART_SEND\uart.c">
-      <SubType>compile</SubType>
-    </Compile>
-    <Compile Include="MCAL\UART\UART_SEND\uart.h">
-      <SubType>compile</SubType>
-    </Compile>
-    <Compile Include="MCAL\UART\UART_SEND\uartconfig.h">
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="Mother_of_Code.c">
@@ -311,9 +251,6 @@
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="RTOS\list.h">
-      <SubType>compile</SubType>
-    </Compile>
-    <Compile Include="RTOS\main.c">
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="RTOS\message_buffer.h">
@@ -370,30 +307,6 @@
     <Compile Include="RTOS\timers.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="SL\BCM\BCM_Recieve\BCM_Config.c">
-      <SubType>compile</SubType>
-    </Compile>
-    <Compile Include="SL\BCM\BCM_Recieve\BCM_Config.h">
-      <SubType>compile</SubType>
-    </Compile>
-    <Compile Include="SL\BCM\BCM_Recieve\BCM_Recieve.c">
-      <SubType>compile</SubType>
-    </Compile>
-    <Compile Include="SL\BCM\BCM_Recieve\BCM_Recieve.h">
-      <SubType>compile</SubType>
-    </Compile>
-    <Compile Include="SL\BCM\BCM_Send\BCM_Config.c">
-      <SubType>compile</SubType>
-    </Compile>
-    <Compile Include="SL\BCM\BCM_Send\BCM_Config.h">
-      <SubType>compile</SubType>
-    </Compile>
-    <Compile Include="SL\BCM\BCM_Send\BCM_Send.c">
-      <SubType>compile</SubType>
-    </Compile>
-    <Compile Include="SL\BCM\BCM_Send\BCM_Send.h">
-      <SubType>compile</SubType>
-    </Compile>
     <Compile Include="SL\SOS\SOS.c">
       <SubType>compile</SubType>
     </Compile>
@@ -423,21 +336,12 @@
     <Folder Include="MCAL\DIO" />
     <Folder Include="MCAL\PushButtons" />
     <Folder Include="MCAL\PWM" />
-    <Folder Include="MCAL\SPI\SPI MASTER" />
-    <Folder Include="MCAL\SPI\SPI SLAVE" />
     <Folder Include="MCAL\Timer" />
-    <Folder Include="MCAL\SPI" />
-    <Folder Include="MCAL\UART" />
-    <Folder Include="MCAL\UART\UART_SEND" />
-    <Folder Include="MCAL\UART\UART_RECIEVE" />
     <Folder Include="SL" />
     <Folder Include="RTOS" />
     <Folder Include="ECUAL" />
     <Folder Include="MCAL" />
     <Folder Include="Infrastructure" />
-    <Folder Include="SL\BCM" />
-    <Folder Include="SL\BCM\BCM_Recieve" />
-    <Folder Include="SL\BCM\BCM_Send" />
     <Folder Include="SL\SOS" />
   </ItemGroup>
   <Import Project="$(AVRSTUDIO_EXE_PATH)\\Vs\\Compiler.targets" />

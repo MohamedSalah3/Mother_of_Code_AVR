@@ -46,21 +46,12 @@ SUBDIRS :=  \
 ../MCAL/DIO \
 ../MCAL/PushButtons \
 ../MCAL/PWM \
-../MCAL/SPI/SPI\ MASTER \
-../MCAL/SPI/SPI\ SLAVE \
 ../MCAL/Timer \
-../MCAL/SPI \
-../MCAL/UART \
-../MCAL/UART/UART_SEND \
-../MCAL/UART/UART_RECIEVE \
 ../SL \
 ../RTOS \
 ../ECUAL \
 ../MCAL \
 ../Infrastructure \
-../SL/BCM \
-../SL/BCM/BCM_Recieve \
-../SL/BCM/BCM_Send \
 ../SL/SOS
 
 
@@ -75,7 +66,6 @@ C_SRCS +=  \
 ../ECUAL/MOTOR/Motor.c \
 ../ECUAL/MOTOR/Motor_Config.c \
 ../ECUAL/SWdelay/softwareDelay.c \
-../ECUAL/US/timer.c \
 ../ECUAL/US/US.c \
 ../ECUAL/US/UsConfig.c \
 ../Infrastructure/Interrupts\ Manger/Interrupts.c \
@@ -88,31 +78,18 @@ C_SRCS +=  \
 ../MCAL/PushButtons/pushButton.c \
 ../MCAL/PWM/PWM.c \
 ../MCAL/PWM/PWM_Config.c \
-../MCAL/SPI/SPI\ MASTER/gpio.c \
-../MCAL/SPI/SPI\ MASTER/SPI.c \
-../MCAL/SPI/SPI\ MASTER/SPI_Config.c \
-../MCAL/SPI/SPI\ SLAVE/gpio.c \
-../MCAL/SPI/SPI\ SLAVE/SPI.c \
-../MCAL/SPI/SPI\ SLAVE/SPI_Config.c \
 ../MCAL/Timer/timer.c \
 ../MCAL/Timer/Timer_Config.c \
-../MCAL/UART/UART_RECIEVE/uart.c \
-../MCAL/UART/UART_SEND/uart.c \
 ../Mother_of_Code.c \
 ../RTOS/croutine.c \
 ../RTOS/event_groups.c \
 ../RTOS/heap_1.c \
 ../RTOS/list.c \
-../RTOS/main.c \
 ../RTOS/port.c \
 ../RTOS/queue.c \
 ../RTOS/stream_buffer.c \
 ../RTOS/tasks.c \
 ../RTOS/timers.c \
-../SL/BCM/BCM_Recieve/BCM_Config.c \
-../SL/BCM/BCM_Recieve/BCM_Recieve.c \
-../SL/BCM/BCM_Send/BCM_Config.c \
-../SL/BCM/BCM_Send/BCM_Send.c \
 ../SL/SOS/SOS.c \
 ../SL/SOS/SOS_Config.c
 
@@ -133,7 +110,6 @@ ECUAL/LED/led.o \
 ECUAL/MOTOR/Motor.o \
 ECUAL/MOTOR/Motor_Config.o \
 ECUAL/SWdelay/softwareDelay.o \
-ECUAL/US/timer.o \
 ECUAL/US/US.o \
 ECUAL/US/UsConfig.o \
 Infrastructure/Interrupts\ Manger/Interrupts.o \
@@ -146,31 +122,18 @@ MCAL/ICU/ICU_Config.o \
 MCAL/PushButtons/pushButton.o \
 MCAL/PWM/PWM.o \
 MCAL/PWM/PWM_Config.o \
-MCAL/SPI/SPI\ MASTER/gpio.o \
-MCAL/SPI/SPI\ MASTER/SPI.o \
-MCAL/SPI/SPI\ MASTER/SPI_Config.o \
-MCAL/SPI/SPI\ SLAVE/gpio.o \
-MCAL/SPI/SPI\ SLAVE/SPI.o \
-MCAL/SPI/SPI\ SLAVE/SPI_Config.o \
 MCAL/Timer/timer.o \
 MCAL/Timer/Timer_Config.o \
-MCAL/UART/UART_RECIEVE/uart.o \
-MCAL/UART/UART_SEND/uart.o \
 Mother_of_Code.o \
 RTOS/croutine.o \
 RTOS/event_groups.o \
 RTOS/heap_1.o \
 RTOS/list.o \
-RTOS/main.o \
 RTOS/port.o \
 RTOS/queue.o \
 RTOS/stream_buffer.o \
 RTOS/tasks.o \
 RTOS/timers.o \
-SL/BCM/BCM_Recieve/BCM_Config.o \
-SL/BCM/BCM_Recieve/BCM_Recieve.o \
-SL/BCM/BCM_Send/BCM_Config.o \
-SL/BCM/BCM_Send/BCM_Send.o \
 SL/SOS/SOS.o \
 SL/SOS/SOS_Config.o
 
@@ -185,7 +148,6 @@ ECUAL/LED/led.o \
 ECUAL/MOTOR/Motor.o \
 ECUAL/MOTOR/Motor_Config.o \
 ECUAL/SWdelay/softwareDelay.o \
-ECUAL/US/timer.o \
 ECUAL/US/US.o \
 ECUAL/US/UsConfig.o \
 "Infrastructure/Interrupts Manger/Interrupts.o" \
@@ -198,31 +160,18 @@ MCAL/ICU/ICU_Config.o \
 MCAL/PushButtons/pushButton.o \
 MCAL/PWM/PWM.o \
 MCAL/PWM/PWM_Config.o \
-"MCAL/SPI/SPI MASTER/gpio.o" \
-"MCAL/SPI/SPI MASTER/SPI.o" \
-"MCAL/SPI/SPI MASTER/SPI_Config.o" \
-"MCAL/SPI/SPI SLAVE/gpio.o" \
-"MCAL/SPI/SPI SLAVE/SPI.o" \
-"MCAL/SPI/SPI SLAVE/SPI_Config.o" \
 MCAL/Timer/timer.o \
 MCAL/Timer/Timer_Config.o \
-MCAL/UART/UART_RECIEVE/uart.o \
-MCAL/UART/UART_SEND/uart.o \
 Mother_of_Code.o \
 RTOS/croutine.o \
 RTOS/event_groups.o \
 RTOS/heap_1.o \
 RTOS/list.o \
-RTOS/main.o \
 RTOS/port.o \
 RTOS/queue.o \
 RTOS/stream_buffer.o \
 RTOS/tasks.o \
 RTOS/timers.o \
-SL/BCM/BCM_Recieve/BCM_Config.o \
-SL/BCM/BCM_Recieve/BCM_Recieve.o \
-SL/BCM/BCM_Send/BCM_Config.o \
-SL/BCM/BCM_Send/BCM_Send.o \
 SL/SOS/SOS.o \
 SL/SOS/SOS_Config.o
 
@@ -237,7 +186,6 @@ ECUAL/LED/led.d \
 ECUAL/MOTOR/Motor.d \
 ECUAL/MOTOR/Motor_Config.d \
 ECUAL/SWdelay/softwareDelay.d \
-ECUAL/US/timer.d \
 ECUAL/US/US.d \
 ECUAL/US/UsConfig.d \
 Infrastructure/Interrupts\ Manger/Interrupts.d \
@@ -250,31 +198,18 @@ MCAL/ICU/ICU_Config.d \
 MCAL/PushButtons/pushButton.d \
 MCAL/PWM/PWM.d \
 MCAL/PWM/PWM_Config.d \
-MCAL/SPI/SPI\ MASTER/gpio.d \
-MCAL/SPI/SPI\ MASTER/SPI.d \
-MCAL/SPI/SPI\ MASTER/SPI_Config.d \
-MCAL/SPI/SPI\ SLAVE/gpio.d \
-MCAL/SPI/SPI\ SLAVE/SPI.d \
-MCAL/SPI/SPI\ SLAVE/SPI_Config.d \
 MCAL/Timer/timer.d \
 MCAL/Timer/Timer_Config.d \
-MCAL/UART/UART_RECIEVE/uart.d \
-MCAL/UART/UART_SEND/uart.d \
 Mother_of_Code.d \
 RTOS/croutine.d \
 RTOS/event_groups.d \
 RTOS/heap_1.d \
 RTOS/list.d \
-RTOS/main.d \
 RTOS/port.d \
 RTOS/queue.d \
 RTOS/stream_buffer.d \
 RTOS/tasks.d \
 RTOS/timers.d \
-SL/BCM/BCM_Recieve/BCM_Config.d \
-SL/BCM/BCM_Recieve/BCM_Recieve.d \
-SL/BCM/BCM_Send/BCM_Config.d \
-SL/BCM/BCM_Send/BCM_Send.d \
 SL/SOS/SOS.d \
 SL/SOS/SOS_Config.d
 
@@ -289,7 +224,6 @@ ECUAL/LED/led.d \
 ECUAL/MOTOR/Motor.d \
 ECUAL/MOTOR/Motor_Config.d \
 ECUAL/SWdelay/softwareDelay.d \
-ECUAL/US/timer.d \
 ECUAL/US/US.d \
 ECUAL/US/UsConfig.d \
 "Infrastructure/Interrupts Manger/Interrupts.d" \
@@ -302,31 +236,18 @@ MCAL/ICU/ICU_Config.d \
 MCAL/PushButtons/pushButton.d \
 MCAL/PWM/PWM.d \
 MCAL/PWM/PWM_Config.d \
-"MCAL/SPI/SPI MASTER/gpio.d" \
-"MCAL/SPI/SPI MASTER/SPI.d" \
-"MCAL/SPI/SPI MASTER/SPI_Config.d" \
-"MCAL/SPI/SPI SLAVE/gpio.d" \
-"MCAL/SPI/SPI SLAVE/SPI.d" \
-"MCAL/SPI/SPI SLAVE/SPI_Config.d" \
 MCAL/Timer/timer.d \
 MCAL/Timer/Timer_Config.d \
-MCAL/UART/UART_RECIEVE/uart.d \
-MCAL/UART/UART_SEND/uart.d \
 Mother_of_Code.d \
 RTOS/croutine.d \
 RTOS/event_groups.d \
 RTOS/heap_1.d \
 RTOS/list.d \
-RTOS/main.d \
 RTOS/port.d \
 RTOS/queue.d \
 RTOS/stream_buffer.d \
 RTOS/tasks.d \
 RTOS/timers.d \
-SL/BCM/BCM_Recieve/BCM_Config.d \
-SL/BCM/BCM_Recieve/BCM_Recieve.d \
-SL/BCM/BCM_Send/BCM_Config.d \
-SL/BCM/BCM_Send/BCM_Send.d \
 SL/SOS/SOS.d \
 SL/SOS/SOS_Config.d
 
@@ -362,8 +283,6 @@ OUTPUT_FILE_DEP:= ./makedep.mk
 
 
 
-
-
 Infrastructure/Interrupts\ Manger/Interrupts.o: ../Infrastructure/Interrupts\ Manger/Interrupts.c
 	@echo Building file: $<
 	@echo Invoking: AVR/GNU C Compiler : (AVR_8_bit_GNU_Toolchain_3.4.1_830) 4.6.2
@@ -373,56 +292,6 @@ Infrastructure/Interrupts\ Manger/Interrupts.o: ../Infrastructure/Interrupts\ Ma
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-MCAL/SPI/SPI\ MASTER/gpio.o: ../MCAL/SPI/SPI\ MASTER/gpio.c
-	@echo Building file: $<
-	@echo Invoking: AVR/GNU C Compiler : (AVR_8_bit_GNU_Toolchain_3.4.1_830) 4.6.2
-	$(QUOTE)C:\Program Files (x86)\Atmel\Atmel Studio 6.0\extensions\Atmel\AVRGCC\3.4.1.95\AVRToolchain\bin\avr-gcc.exe$(QUOTE) -funsigned-char -funsigned-bitfields -O1 -fpack-struct -fshort-enums -g2 -Wall -c -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"  -mmcu=atmega32a   -o"$@" "$<" 
-	@echo Finished building: $<
-
-MCAL/SPI/SPI\ MASTER/SPI.o: ../MCAL/SPI/SPI\ MASTER/SPI.c
-	@echo Building file: $<
-	@echo Invoking: AVR/GNU C Compiler : (AVR_8_bit_GNU_Toolchain_3.4.1_830) 4.6.2
-	$(QUOTE)C:\Program Files (x86)\Atmel\Atmel Studio 6.0\extensions\Atmel\AVRGCC\3.4.1.95\AVRToolchain\bin\avr-gcc.exe$(QUOTE) -funsigned-char -funsigned-bitfields -O1 -fpack-struct -fshort-enums -g2 -Wall -c -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"  -mmcu=atmega32a   -o"$@" "$<" 
-	@echo Finished building: $<
-
-MCAL/SPI/SPI\ MASTER/SPI_Config.o: ../MCAL/SPI/SPI\ MASTER/SPI_Config.c
-	@echo Building file: $<
-	@echo Invoking: AVR/GNU C Compiler : (AVR_8_bit_GNU_Toolchain_3.4.1_830) 4.6.2
-	$(QUOTE)C:\Program Files (x86)\Atmel\Atmel Studio 6.0\extensions\Atmel\AVRGCC\3.4.1.95\AVRToolchain\bin\avr-gcc.exe$(QUOTE) -funsigned-char -funsigned-bitfields -O1 -fpack-struct -fshort-enums -g2 -Wall -c -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"  -mmcu=atmega32a   -o"$@" "$<" 
-	@echo Finished building: $<
-
-MCAL/SPI/SPI\ SLAVE/gpio.o: ../MCAL/SPI/SPI\ SLAVE/gpio.c
-	@echo Building file: $<
-	@echo Invoking: AVR/GNU C Compiler : (AVR_8_bit_GNU_Toolchain_3.4.1_830) 4.6.2
-	$(QUOTE)C:\Program Files (x86)\Atmel\Atmel Studio 6.0\extensions\Atmel\AVRGCC\3.4.1.95\AVRToolchain\bin\avr-gcc.exe$(QUOTE) -funsigned-char -funsigned-bitfields -O1 -fpack-struct -fshort-enums -g2 -Wall -c -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"  -mmcu=atmega32a   -o"$@" "$<" 
-	@echo Finished building: $<
-
-MCAL/SPI/SPI\ SLAVE/SPI.o: ../MCAL/SPI/SPI\ SLAVE/SPI.c
-	@echo Building file: $<
-	@echo Invoking: AVR/GNU C Compiler : (AVR_8_bit_GNU_Toolchain_3.4.1_830) 4.6.2
-	$(QUOTE)C:\Program Files (x86)\Atmel\Atmel Studio 6.0\extensions\Atmel\AVRGCC\3.4.1.95\AVRToolchain\bin\avr-gcc.exe$(QUOTE) -funsigned-char -funsigned-bitfields -O1 -fpack-struct -fshort-enums -g2 -Wall -c -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"  -mmcu=atmega32a   -o"$@" "$<" 
-	@echo Finished building: $<
-
-MCAL/SPI/SPI\ SLAVE/SPI_Config.o: ../MCAL/SPI/SPI\ SLAVE/SPI_Config.c
-	@echo Building file: $<
-	@echo Invoking: AVR/GNU C Compiler : (AVR_8_bit_GNU_Toolchain_3.4.1_830) 4.6.2
-	$(QUOTE)C:\Program Files (x86)\Atmel\Atmel Studio 6.0\extensions\Atmel\AVRGCC\3.4.1.95\AVRToolchain\bin\avr-gcc.exe$(QUOTE) -funsigned-char -funsigned-bitfields -O1 -fpack-struct -fshort-enums -g2 -Wall -c -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"  -mmcu=atmega32a   -o"$@" "$<" 
-	@echo Finished building: $<
 
 
 
@@ -551,31 +420,7 @@ MCAL/PWM/%.o: ../MCAL/PWM/%.c
 	$(QUOTE)C:\Program Files (x86)\Atmel\Atmel Studio 6.0\extensions\Atmel\AVRGCC\3.4.1.95\AVRToolchain\bin\avr-gcc.exe$(QUOTE) -funsigned-char -funsigned-bitfields -O1 -fpack-struct -fshort-enums -g2 -Wall -c -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"  -mmcu=atmega32a   -o"$@" "$<" 
 	@echo Finished building: $<
 
-MCAL/SPI/SPI\ MASTER/%.o: ../MCAL/SPI/SPI\ MASTER/%.c
-	@echo Building file: $<
-	@echo Invoking: AVR/GNU C Compiler : (AVR_8_bit_GNU_Toolchain_3.4.1_830) 4.6.2
-	$(QUOTE)C:\Program Files (x86)\Atmel\Atmel Studio 6.0\extensions\Atmel\AVRGCC\3.4.1.95\AVRToolchain\bin\avr-gcc.exe$(QUOTE) -funsigned-char -funsigned-bitfields -O1 -fpack-struct -fshort-enums -g2 -Wall -c -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"  -mmcu=atmega32a   -o"$@" "$<" 
-	@echo Finished building: $<
-
-MCAL/SPI/SPI\ SLAVE/%.o: ../MCAL/SPI/SPI\ SLAVE/%.c
-	@echo Building file: $<
-	@echo Invoking: AVR/GNU C Compiler : (AVR_8_bit_GNU_Toolchain_3.4.1_830) 4.6.2
-	$(QUOTE)C:\Program Files (x86)\Atmel\Atmel Studio 6.0\extensions\Atmel\AVRGCC\3.4.1.95\AVRToolchain\bin\avr-gcc.exe$(QUOTE) -funsigned-char -funsigned-bitfields -O1 -fpack-struct -fshort-enums -g2 -Wall -c -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"  -mmcu=atmega32a   -o"$@" "$<" 
-	@echo Finished building: $<
-
 MCAL/Timer/%.o: ../MCAL/Timer/%.c
-	@echo Building file: $<
-	@echo Invoking: AVR/GNU C Compiler : (AVR_8_bit_GNU_Toolchain_3.4.1_830) 4.6.2
-	$(QUOTE)C:\Program Files (x86)\Atmel\Atmel Studio 6.0\extensions\Atmel\AVRGCC\3.4.1.95\AVRToolchain\bin\avr-gcc.exe$(QUOTE) -funsigned-char -funsigned-bitfields -O1 -fpack-struct -fshort-enums -g2 -Wall -c -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"  -mmcu=atmega32a   -o"$@" "$<" 
-	@echo Finished building: $<
-
-MCAL/UART/UART_RECIEVE/%.o: ../MCAL/UART/UART_RECIEVE/%.c
-	@echo Building file: $<
-	@echo Invoking: AVR/GNU C Compiler : (AVR_8_bit_GNU_Toolchain_3.4.1_830) 4.6.2
-	$(QUOTE)C:\Program Files (x86)\Atmel\Atmel Studio 6.0\extensions\Atmel\AVRGCC\3.4.1.95\AVRToolchain\bin\avr-gcc.exe$(QUOTE) -funsigned-char -funsigned-bitfields -O1 -fpack-struct -fshort-enums -g2 -Wall -c -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"  -mmcu=atmega32a   -o"$@" "$<" 
-	@echo Finished building: $<
-
-MCAL/UART/UART_SEND/%.o: ../MCAL/UART/UART_SEND/%.c
 	@echo Building file: $<
 	@echo Invoking: AVR/GNU C Compiler : (AVR_8_bit_GNU_Toolchain_3.4.1_830) 4.6.2
 	$(QUOTE)C:\Program Files (x86)\Atmel\Atmel Studio 6.0\extensions\Atmel\AVRGCC\3.4.1.95\AVRToolchain\bin\avr-gcc.exe$(QUOTE) -funsigned-char -funsigned-bitfields -O1 -fpack-struct -fshort-enums -g2 -Wall -c -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"  -mmcu=atmega32a   -o"$@" "$<" 
@@ -588,18 +433,6 @@ MCAL/UART/UART_SEND/%.o: ../MCAL/UART/UART_SEND/%.c
 	@echo Finished building: $<
 
 RTOS/%.o: ../RTOS/%.c
-	@echo Building file: $<
-	@echo Invoking: AVR/GNU C Compiler : (AVR_8_bit_GNU_Toolchain_3.4.1_830) 4.6.2
-	$(QUOTE)C:\Program Files (x86)\Atmel\Atmel Studio 6.0\extensions\Atmel\AVRGCC\3.4.1.95\AVRToolchain\bin\avr-gcc.exe$(QUOTE) -funsigned-char -funsigned-bitfields -O1 -fpack-struct -fshort-enums -g2 -Wall -c -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"  -mmcu=atmega32a   -o"$@" "$<" 
-	@echo Finished building: $<
-
-SL/BCM/BCM_Recieve/%.o: ../SL/BCM/BCM_Recieve/%.c
-	@echo Building file: $<
-	@echo Invoking: AVR/GNU C Compiler : (AVR_8_bit_GNU_Toolchain_3.4.1_830) 4.6.2
-	$(QUOTE)C:\Program Files (x86)\Atmel\Atmel Studio 6.0\extensions\Atmel\AVRGCC\3.4.1.95\AVRToolchain\bin\avr-gcc.exe$(QUOTE) -funsigned-char -funsigned-bitfields -O1 -fpack-struct -fshort-enums -g2 -Wall -c -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"  -mmcu=atmega32a   -o"$@" "$<" 
-	@echo Finished building: $<
-
-SL/BCM/BCM_Send/%.o: ../SL/BCM/BCM_Send/%.c
 	@echo Building file: $<
 	@echo Invoking: AVR/GNU C Compiler : (AVR_8_bit_GNU_Toolchain_3.4.1_830) 4.6.2
 	$(QUOTE)C:\Program Files (x86)\Atmel\Atmel Studio 6.0\extensions\Atmel\AVRGCC\3.4.1.95\AVRToolchain\bin\avr-gcc.exe$(QUOTE) -funsigned-char -funsigned-bitfields -O1 -fpack-struct -fshort-enums -g2 -Wall -c -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"  -mmcu=atmega32a   -o"$@" "$<" 

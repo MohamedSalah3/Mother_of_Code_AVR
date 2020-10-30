@@ -29,3 +29,14 @@ DIO_Cfg_s Dio_configurationD= {
 	BIT4|BIT3|BIT2,
 	OUTPUT
 };
+DIO_Cfg_s SPI_Slave_Config= {
+	GPIOB,
+	BIT4|BIT5|BIT7,
+	OUTPUT
+};
+DIO_Cfg_s SPI_Slave_Config1=
+{
+GPIOB,
+BIT6,
+INPUT
+};

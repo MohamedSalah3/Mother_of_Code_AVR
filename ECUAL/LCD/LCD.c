@@ -5,7 +5,7 @@
  *  Author: mo
  */ 
  #include "LCD.h"
- #include "softwareDelay.h"
+ #include "../SWdelay/softwareDelay.h"
  #include <stdlib.h>
 extern uint8_t u8_Init_finished;
   uint8_t U8_index=0;

@@ -10,7 +10,7 @@
 #include "../../Infrastructure/registers.h"
 #include "../../Infrastructure/Error.h"
 #include "../../Infrastructure/std_types.h"
-#include "../../Infrastructure/Intturpts Manger/Interrupts.h"
+#include "../../Infrastructure/Interrupts Manger/Interrupts.h"
 /************************************************************************/
 /*				               Constants                                */
 /************************************************************************/

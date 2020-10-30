@@ -8,7 +8,7 @@
 
 #ifndef BCM_SEND_H_
 #define BCM_SEND_H_
-#include "BCM_Config.h"
+#include "BCM_Send_Config.h"
 
 ERROR_STATUS BCM_Init (const BCM_ConfigType * ConfigPtr );
 

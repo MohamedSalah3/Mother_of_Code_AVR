@@ -79,6 +79,5 @@ static uint8_t u8_Counter1=0;
 	
 }
 void Read_Time_Task(void){
-	
-		
+	adc_read();
 }

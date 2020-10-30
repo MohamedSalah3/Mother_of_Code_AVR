@@ -8,7 +8,7 @@
 
 #ifndef BCM_RECIEVE_H_
 #define BCM_RECIEVE_H_
-#include "BCM_Config.h"
+#include "BCM_Recieve_Config.h"
 
 
 typedef uint8_t ERROR_STATUS ;

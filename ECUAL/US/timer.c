@@ -6,8 +6,8 @@
  *  Author: mo
  */
  /*INCLUDES*/
-#include "Timer.h"
-#include "Timer_Config.h"
+#include "../../MCAL/Timer/Timer.h"
+
 
 /************************************************************************/
 /*		         TIMER FUNCTIONS' IMPLEMENTATION		        */

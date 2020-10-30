@@ -8,9 +8,9 @@
 
 #ifndef LCD_H_
 #define LCD_H_
-#include "std_types.h"
-#include "registers.h"
-#include "DIO.h"
+#include "../../Infrastructure/std_types.h"
+#include "../../Infrastructure/registers.h"
+#include "../../MCAL/DIO/DIO.h"
 
 #define LCD_RS_PIN	0x02 	//define MCU pin connected to LCD RS
 #define LCD_RS_PORT	GPIOA

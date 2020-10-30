@@ -7,9 +7,9 @@
 #ifndef TIMER_H_
 #define TIMER_H_
 /*INCLUDES**/
-#include "std_types.h"
-#include "registers.h"
-#include "Timer_Config.h"
+#include "../../Infrastructure/std_types.h"
+#include "../../Infrastructure/registers.h"
+#include "../../MCAL/Timer/Timer_Config.h"
 /************************************************************************/
 /*		         TIMER FUNCTIONS' PROTOTYPES		        */
 /************************************************************************/

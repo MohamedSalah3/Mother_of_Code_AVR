@@ -8,21 +8,21 @@
  #include "../SWdelay/softwareDelay.h"
  #include <stdlib.h>
 extern uint8_t u8_Init_finished;
-  uint8_t U8_index=0;
+ static uint8_t U8_index=0;
  void LCD_EN_pulse(void)
  {
 	 DIO_Write(LCD_EN_PORT, LCD_EN_PIN, HIGH);
 /***********************************************************/
-	 SwDelay_us(1);
+	 SwDelay_us(10);
 	 DIO_Write(LCD_EN_PORT, LCD_EN_PIN, LOW);
 /*************************************************************/	 
-	 SwDelay_us(1);
+	 SwDelay_us(10);
  }
 
  void LCD_config_pins(void){
 
 	 /* set LCD pins as outputs */
-	DIO_init(&Dio_configurationA);
+	DIO_init(&Dio_configurationB);
 }
 
  void LCD_send_nibble(uint8_t data){
@@ -75,28 +75,30 @@ extern uint8_t u8_Init_finished;
  /******************************************************************************/
  void LCD_init(void)//Initializes LCD
  {
-	
+	/*
 	uint8_t commands[9]={0x33,0x32,Four_bit,Cursor_on,Lcd_clear,Increment_cursor,Cursor_off,0};
 	 LCD_config_pins();
-	 /*******************************************************************/
-	// SwDelay_ms(20);
-	 //	LCD_send_nibble(0x00);
-	 //
-	 //	gpioPinWrite(LCD_RS_PORT, LCD_RS_PIN, LOW);
-	 //	gpioPinWrite(LCD_RW_PORT, LCD_RW_PIN, LOW);
-	 //	gpioPinWrite(LCD_EN_PORT, LCD_EN_PIN, LOW);
-/*
-	 LCD_send_command(0x33);
-	 LCD_send_command(0x32);
+	 */
+	/*******************************************************************/
+	 SwDelay_ms(20);
+	LCD_send_nibble(0x00);
+	
+		DIO_Write(LCD_RS_PORT, LCD_RS_PIN, LOW);
+		DIO_Write(LCD_RW_PORT, LCD_RW_PIN, LOW);
+		DIO_Write(LCD_EN_PORT, LCD_EN_PIN, LOW);
+
 	 LCD_send_command(Four_bit); // 4-bit
+	 LCD_send_command(0x38);
+	 LCD_send_command(0x32);
+	 
 	 LCD_send_command(Cursor_on);
 	 LCD_send_command(Lcd_clear);
 	 
-	 //SwDelay_ms(10);
+	SwDelay_ms(10);
 	 LCD_send_command(Increment_cursor);
 	 LCD_send_command(Cursor_off); // Cursor off
-	 */
 
+/*
 if(commands[U8_index])
 {
 		LCD_send_command(commands[U8_index]);
@@ -107,7 +109,7 @@ if(commands[U8_index])
 {
 	u8_Init_finished=1;
 }
- 
+ */
 }
  void LCD_clear(void)				//Clears LCD
  {

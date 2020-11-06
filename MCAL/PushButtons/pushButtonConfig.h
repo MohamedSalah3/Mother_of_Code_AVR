@@ -17,7 +17,7 @@
 
 
 #define BTN_0_GPIO	GPIOC
-#define BTN_0_BIT	BIT4
+#define BTN_0_BIT	BIT0
 
 #define BTN_1_GPIO	GPIOB
 #define BTN_1_BIT	BIT2

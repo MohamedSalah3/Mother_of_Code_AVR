@@ -48,6 +48,8 @@ MCAL\Timer\timer.c
 
 MCAL\Timer\Timer_Config.c
 
+MCAL\uart_Send.c
+
 Mother_of_Code.c
 
 RTOS\croutine.c

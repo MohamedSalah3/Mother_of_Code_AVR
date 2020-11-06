@@ -220,6 +220,15 @@
     <Compile Include="MCAL\Timer\Timer_Config.h">
       <SubType>compile</SubType>
     </Compile>
+    <Compile Include="MCAL\uart_Send.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="MCAL\uart_Send.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="MCAL\uart_Send_Config.h">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="Mother_of_Code.c">
       <SubType>compile</SubType>
     </Compile>

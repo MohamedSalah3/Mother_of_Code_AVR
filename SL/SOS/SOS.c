@@ -8,9 +8,8 @@
 #include "SOS.h"
 #include "../../Infrastructure/Interrupts Manger/Interrupts.h"
 #include "../../ECUAL/LCD/LCD.h"
-#define Buffer_Size 4
-uint8_t u8_Init_finished=0;
-
+#include "../../AAL/print_Machine/Tasks.h"
+#define Buffer_Size 7
 uint8_t u8_Is_Intialized=0;
 start_status start[Buffer_Size];
 uint8_t u8_FUN_index=0;

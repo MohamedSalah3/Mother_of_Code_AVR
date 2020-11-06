@@ -13,25 +13,25 @@
 #include "../../MCAL/DIO/DIO.h"
 
 #define LCD_RS_PIN	0x02 	//define MCU pin connected to LCD RS
-#define LCD_RS_PORT	GPIOA
+#define LCD_RS_PORT	GPIOB
 
 #define LCD_RW_PIN	0x04 	//define MCU pin connected to LCD R/W
-#define LCD_RW_PORT	GPIOA
+#define LCD_RW_PORT	GPIOB
 
 #define LCD_EN_PIN	0x08	//define MCU pin connected to LCD E
-#define LCD_EN_PORT	GPIOA
+#define LCD_EN_PORT	GPIOB
 
 #define LCD_D4_PIN	0x10	//define MCU pin connected to LCD D4
-#define LCD_D4_PORT	GPIOA
+#define LCD_D4_PORT	GPIOB
 
 #define LCD_D5_PIN	0x20	//define MCU pin connected to LCD D5
-#define LCD_D5_PORT	GPIOA
+#define LCD_D5_PORT	GPIOB
 
 #define LCD_D6_PIN	0x40	//define MCU pin connected to LCD D6
-#define LCD_D6_PORT	GPIOA
+#define LCD_D6_PORT	GPIOB
 
 #define LCD_D7_PIN	0x80	//define MCU pin connected to LCD D7
-#define LCD_D7_PORT	GPIOA
+#define LCD_D7_PORT	GPIOB
 
 /* LCD Commands definition */
 #define Lcd_clear           0x01

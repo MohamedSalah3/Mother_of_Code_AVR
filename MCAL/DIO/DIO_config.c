@@ -14,8 +14,8 @@ FULL_PORT,
 
 DIO_Cfg_s Dio_configurationB= {
 	GPIOB,
-	BIT2,
-	INPUT
+	FULL_PORT,
+	OUTPUT
 };
 
 DIO_Cfg_s Dio_configurationC= {

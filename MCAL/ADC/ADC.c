@@ -90,6 +90,7 @@ void adc_read(void){
 		ADC_R[arr_counter_of_ptr]();
 			arr_counter_of_ptr++;
 	}else{arr_counter_of_ptr=0;}
+	
 }
 void ADC_read_int(void)
 {

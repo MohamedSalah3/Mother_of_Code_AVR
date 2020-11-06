@@ -80,6 +80,7 @@ C_SRCS +=  \
 ../MCAL/PWM/PWM_Config.c \
 ../MCAL/Timer/timer.c \
 ../MCAL/Timer/Timer_Config.c \
+../MCAL/uart_Send.c \
 ../Mother_of_Code.c \
 ../RTOS/croutine.c \
 ../RTOS/event_groups.c \
@@ -124,6 +125,7 @@ MCAL/PWM/PWM.o \
 MCAL/PWM/PWM_Config.o \
 MCAL/Timer/timer.o \
 MCAL/Timer/Timer_Config.o \
+MCAL/uart_Send.o \
 Mother_of_Code.o \
 RTOS/croutine.o \
 RTOS/event_groups.o \
@@ -162,6 +164,7 @@ MCAL/PWM/PWM.o \
 MCAL/PWM/PWM_Config.o \
 MCAL/Timer/timer.o \
 MCAL/Timer/Timer_Config.o \
+MCAL/uart_Send.o \
 Mother_of_Code.o \
 RTOS/croutine.o \
 RTOS/event_groups.o \
@@ -200,6 +203,7 @@ MCAL/PWM/PWM.d \
 MCAL/PWM/PWM_Config.d \
 MCAL/Timer/timer.d \
 MCAL/Timer/Timer_Config.d \
+MCAL/uart_Send.d \
 Mother_of_Code.d \
 RTOS/croutine.d \
 RTOS/event_groups.d \
@@ -238,6 +242,7 @@ MCAL/PWM/PWM.d \
 MCAL/PWM/PWM_Config.d \
 MCAL/Timer/timer.d \
 MCAL/Timer/Timer_Config.d \
+MCAL/uart_Send.d \
 Mother_of_Code.d \
 RTOS/croutine.d \
 RTOS/event_groups.d \
@@ -288,6 +293,8 @@ Infrastructure/Interrupts\ Manger/Interrupts.o: ../Infrastructure/Interrupts\ Ma
 	@echo Invoking: AVR/GNU C Compiler : (AVR_8_bit_GNU_Toolchain_3.4.1_830) 4.6.2
 	$(QUOTE)C:\Program Files (x86)\Atmel\Atmel Studio 6.0\extensions\Atmel\AVRGCC\3.4.1.95\AVRToolchain\bin\avr-gcc.exe$(QUOTE) -funsigned-char -funsigned-bitfields -O1 -fpack-struct -fshort-enums -g2 -Wall -c -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"  -mmcu=atmega32a   -o"$@" "$<" 
 	@echo Finished building: $<
+
+
 
 
 
@@ -421,6 +428,12 @@ MCAL/PWM/%.o: ../MCAL/PWM/%.c
 	@echo Finished building: $<
 
 MCAL/Timer/%.o: ../MCAL/Timer/%.c
+	@echo Building file: $<
+	@echo Invoking: AVR/GNU C Compiler : (AVR_8_bit_GNU_Toolchain_3.4.1_830) 4.6.2
+	$(QUOTE)C:\Program Files (x86)\Atmel\Atmel Studio 6.0\extensions\Atmel\AVRGCC\3.4.1.95\AVRToolchain\bin\avr-gcc.exe$(QUOTE) -funsigned-char -funsigned-bitfields -O1 -fpack-struct -fshort-enums -g2 -Wall -c -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"  -mmcu=atmega32a   -o"$@" "$<" 
+	@echo Finished building: $<
+
+MCAL/%.o: ../MCAL/%.c
 	@echo Building file: $<
 	@echo Invoking: AVR/GNU C Compiler : (AVR_8_bit_GNU_Toolchain_3.4.1_830) 4.6.2
 	$(QUOTE)C:\Program Files (x86)\Atmel\Atmel Studio 6.0\extensions\Atmel\AVRGCC\3.4.1.95\AVRToolchain\bin\avr-gcc.exe$(QUOTE) -funsigned-char -funsigned-bitfields -O1 -fpack-struct -fshort-enums -g2 -Wall -c -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"  -mmcu=atmega32a   -o"$@" "$<" 

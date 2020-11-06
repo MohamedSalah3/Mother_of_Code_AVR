@@ -12,7 +12,7 @@
 #include "ADC_Config.h"
 
 
-
+extern uint16_t u16_ADC_readings_Channel[];
 ERROR_STATUS ADC_INIT(ADC_Cfg_s *ADC_info);
 void ADC_Read0(void);
 void ADC_Read1(void);

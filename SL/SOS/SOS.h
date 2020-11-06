@@ -12,7 +12,7 @@
 #include "../../MCAL/Timer/Timer.h"
 #include "../../MCAL/DIO/DIO.h"
 #include "../../Infrastructure/Error.h"
-typedef void (*ptr_to_Fun) (void);
+#include "../../AAL/print_Machine/Tasks.h"
 
 
 ERROR_STATUS SOS_Init (const TMU_ConfigType * ConfigPtr );

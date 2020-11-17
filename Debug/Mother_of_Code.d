@@ -12,6 +12,8 @@ Mother_of_Code.d Mother_of_Code.o: .././Mother_of_Code.c \
  .././SL/SOS/../../MCAL/DIO/../../Infrastructure/Error.h \
  .././SL/SOS/../../MCAL/DIO/../../Infrastructure/std_types.h \
  .././SL/SOS/../../MCAL/DIO/../../Infrastructure/Interrupts\ Manger/Interrupts.h \
+ .././SL/SOS/../../MCAL/DIO/../../Infrastructure/Interrupts\ Manger/../registers.h \
+ .././SL/SOS/../../MCAL/DIO/../../Infrastructure/Interrupts\ Manger/../std_types.h \
  .././SL/SOS/../../Infrastructure/Error.h \
  .././SL/SOS/../../AAL/print_Machine/Tasks.h \
  .././SL/SOS/../../AAL/print_Machine/../../MCAL/ADC/ADC.h \
@@ -32,7 +34,15 @@ Mother_of_Code.d Mother_of_Code.o: .././Mother_of_Code.c \
  .././SL/SOS/../../AAL/print_Machine/../../MCAL/uart_Send_Config.h \
  .././SL/SOS/../../AAL/print_Machine/../../MCAL/../Infrastructure/registers.h \
  .././SL/SOS/../../AAL/print_Machine/../../MCAL/../Infrastructure/std_types.h \
- .././SL/SOS/../../AAL/print_Machine/../../MCAL/../Infrastructure/Interrupts\ Manger/Interrupts.h
+ .././SL/SOS/../../AAL/print_Machine/../../MCAL/../Infrastructure/Interrupts\ Manger/Interrupts.h \
+ .././ECUAL/SWdelay/softwareDelay.h \
+ .././ECUAL/SWdelay/../../Infrastructure/std_types.h \
+ .././AAL/Plastic_braker_machine/plastic_braker.h \
+ .././AAL/Plastic_braker_machine/plastic_braker_config.h \
+ .././AAL/Plastic_braker_machine/../../Infrastructure/Interrupts\ Manger/Interrupts.h \
+ .././AAL/Plastic_braker_machine/../../MCAL/DIO/DIO.h \
+ .././AAL/Plastic_braker_machine/../../MCAL/PushButtons/pushButton.h \
+ .././MCAL/uart_Send.h
 
 .././SL/SOS/SOS.h:
 
@@ -63,6 +73,10 @@ Mother_of_Code.d Mother_of_Code.o: .././Mother_of_Code.c \
 .././SL/SOS/../../MCAL/DIO/../../Infrastructure/std_types.h:
 
 .././SL/SOS/../../MCAL/DIO/../../Infrastructure/Interrupts\ Manger/Interrupts.h:
+
+.././SL/SOS/../../MCAL/DIO/../../Infrastructure/Interrupts\ Manger/../registers.h:
+
+.././SL/SOS/../../MCAL/DIO/../../Infrastructure/Interrupts\ Manger/../std_types.h:
 
 .././SL/SOS/../../Infrastructure/Error.h:
 
@@ -105,3 +119,19 @@ Mother_of_Code.d Mother_of_Code.o: .././Mother_of_Code.c \
 .././SL/SOS/../../AAL/print_Machine/../../MCAL/../Infrastructure/std_types.h:
 
 .././SL/SOS/../../AAL/print_Machine/../../MCAL/../Infrastructure/Interrupts\ Manger/Interrupts.h:
+
+.././ECUAL/SWdelay/softwareDelay.h:
+
+.././ECUAL/SWdelay/../../Infrastructure/std_types.h:
+
+.././AAL/Plastic_braker_machine/plastic_braker.h:
+
+.././AAL/Plastic_braker_machine/plastic_braker_config.h:
+
+.././AAL/Plastic_braker_machine/../../Infrastructure/Interrupts\ Manger/Interrupts.h:
+
+.././AAL/Plastic_braker_machine/../../MCAL/DIO/DIO.h:
+
+.././AAL/Plastic_braker_machine/../../MCAL/PushButtons/pushButton.h:
+
+.././MCAL/uart_Send.h:

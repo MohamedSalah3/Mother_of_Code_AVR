@@ -4,6 +4,10 @@
 
 AAL\car_sm\car_sm.c
 
+AAL\Plastic_braker_machine\plastic_braker.c
+
+AAL\Plastic_braker_machine\plastic_braker_config.c
+
 AAL\print_Machine\Tasks.c
 
 AAL\Steering\Steering.c

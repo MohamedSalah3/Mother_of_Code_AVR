@@ -13,7 +13,9 @@ AAL/Steering/Steering.d AAL/Steering/Steering.o: \
  ../AAL/Steering/../../ECUAL/Motor/../../MCAL/DIO/../../Infrastructure/registers.h \
  ../AAL/Steering/../../ECUAL/Motor/../../MCAL/DIO/../../Infrastructure/Error.h \
  ../AAL/Steering/../../ECUAL/Motor/../../MCAL/DIO/../../Infrastructure/std_types.h \
- ../AAL/Steering/../../ECUAL/Motor/../../MCAL/DIO/../../Infrastructure/Interrupts\ Manger/Interrupts.h
+ ../AAL/Steering/../../ECUAL/Motor/../../MCAL/DIO/../../Infrastructure/Interrupts\ Manger/Interrupts.h \
+ ../AAL/Steering/../../ECUAL/Motor/../../MCAL/DIO/../../Infrastructure/Interrupts\ Manger/../registers.h \
+ ../AAL/Steering/../../ECUAL/Motor/../../MCAL/DIO/../../Infrastructure/Interrupts\ Manger/../std_types.h
 
 ../AAL/Steering/Steering.h:
 
@@ -44,3 +46,7 @@ AAL/Steering/Steering.d AAL/Steering/Steering.o: \
 ../AAL/Steering/../../ECUAL/Motor/../../MCAL/DIO/../../Infrastructure/std_types.h:
 
 ../AAL/Steering/../../ECUAL/Motor/../../MCAL/DIO/../../Infrastructure/Interrupts\ Manger/Interrupts.h:
+
+../AAL/Steering/../../ECUAL/Motor/../../MCAL/DIO/../../Infrastructure/Interrupts\ Manger/../registers.h:
+
+../AAL/Steering/../../ECUAL/Motor/../../MCAL/DIO/../../Infrastructure/Interrupts\ Manger/../std_types.h:

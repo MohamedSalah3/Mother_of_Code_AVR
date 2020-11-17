@@ -12,6 +12,8 @@ SL/SOS/SOS_Config.d SL/SOS/SOS_Config.o: ../SL/SOS/SOS_Config.c \
  ../SL/SOS/../../MCAL/DIO/../../Infrastructure/Error.h \
  ../SL/SOS/../../MCAL/DIO/../../Infrastructure/std_types.h \
  ../SL/SOS/../../MCAL/DIO/../../Infrastructure/Interrupts\ Manger/Interrupts.h \
+ ../SL/SOS/../../MCAL/DIO/../../Infrastructure/Interrupts\ Manger/../registers.h \
+ ../SL/SOS/../../MCAL/DIO/../../Infrastructure/Interrupts\ Manger/../std_types.h \
  ../SL/SOS/../../Infrastructure/Error.h \
  ../SL/SOS/../../AAL/print_Machine/Tasks.h \
  ../SL/SOS/../../AAL/print_Machine/../../MCAL/ADC/ADC.h \
@@ -63,6 +65,10 @@ SL/SOS/SOS_Config.d SL/SOS/SOS_Config.o: ../SL/SOS/SOS_Config.c \
 ../SL/SOS/../../MCAL/DIO/../../Infrastructure/std_types.h:
 
 ../SL/SOS/../../MCAL/DIO/../../Infrastructure/Interrupts\ Manger/Interrupts.h:
+
+../SL/SOS/../../MCAL/DIO/../../Infrastructure/Interrupts\ Manger/../registers.h:
+
+../SL/SOS/../../MCAL/DIO/../../Infrastructure/Interrupts\ Manger/../std_types.h:
 
 ../SL/SOS/../../Infrastructure/Error.h:
 

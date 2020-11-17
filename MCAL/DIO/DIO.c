@@ -153,7 +153,7 @@ switch (GPIO)
 }
 if(*data > 0)
 {
-	*data = 1;
+	*data = HIGH;
 }
 
 

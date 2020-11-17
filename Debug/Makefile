@@ -33,6 +33,7 @@ OUTPUT_FILE_DEP:=
 SUBDIRS :=  \
 ../AAL \
 ../AAL/car_sm \
+../AAL/Plastic_braker_machine \
 ../AAL/print_Machine \
 ../AAL/Steering \
 ../ECUAL/LCD \
@@ -58,6 +59,8 @@ SUBDIRS :=  \
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS +=  \
 ../AAL/car_sm/car_sm.c \
+../AAL/Plastic_braker_machine/plastic_braker.c \
+../AAL/Plastic_braker_machine/plastic_braker_config.c \
 ../AAL/print_Machine/Tasks.c \
 ../AAL/Steering/Steering.c \
 ../ECUAL/LCD/LCD.c \
@@ -103,6 +106,8 @@ ASM_SRCS +=
 
 OBJS +=  \
 AAL/car_sm/car_sm.o \
+AAL/Plastic_braker_machine/plastic_braker.o \
+AAL/Plastic_braker_machine/plastic_braker_config.o \
 AAL/print_Machine/Tasks.o \
 AAL/Steering/Steering.o \
 ECUAL/LCD/LCD.o \
@@ -142,6 +147,8 @@ SL/SOS/SOS_Config.o
 
 OBJS_AS_ARGS +=  \
 AAL/car_sm/car_sm.o \
+AAL/Plastic_braker_machine/plastic_braker.o \
+AAL/Plastic_braker_machine/plastic_braker_config.o \
 AAL/print_Machine/Tasks.o \
 AAL/Steering/Steering.o \
 ECUAL/LCD/LCD.o \
@@ -181,6 +188,8 @@ SL/SOS/SOS_Config.o
 
 C_DEPS +=  \
 AAL/car_sm/car_sm.d \
+AAL/Plastic_braker_machine/plastic_braker.d \
+AAL/Plastic_braker_machine/plastic_braker_config.d \
 AAL/print_Machine/Tasks.d \
 AAL/Steering/Steering.d \
 ECUAL/LCD/LCD.d \
@@ -220,6 +229,8 @@ SL/SOS/SOS_Config.d
 
 C_DEPS_AS_ARGS +=  \
 AAL/car_sm/car_sm.d \
+AAL/Plastic_braker_machine/plastic_braker.d \
+AAL/Plastic_braker_machine/plastic_braker_config.d \
 AAL/print_Machine/Tasks.d \
 AAL/Steering/Steering.d \
 ECUAL/LCD/LCD.d \
@@ -266,6 +277,10 @@ ADDITIONAL_DEPENDENCIES:=
 OUTPUT_FILE_DEP:= ./makedep.mk
 
 # AVR32/GNU C Compiler
+
+
+
+
 
 
 
@@ -344,6 +359,12 @@ Infrastructure/Interrupts\ Manger/Interrupts.o: ../Infrastructure/Interrupts\ Ma
 
 
 AAL/car_sm/%.o: ../AAL/car_sm/%.c
+	@echo Building file: $<
+	@echo Invoking: AVR/GNU C Compiler : (AVR_8_bit_GNU_Toolchain_3.4.1_830) 4.6.2
+	$(QUOTE)C:\Program Files (x86)\Atmel\Atmel Studio 6.0\extensions\Atmel\AVRGCC\3.4.1.95\AVRToolchain\bin\avr-gcc.exe$(QUOTE) -funsigned-char -funsigned-bitfields -O1 -fpack-struct -fshort-enums -g2 -Wall -c -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"  -mmcu=atmega32a   -o"$@" "$<" 
+	@echo Finished building: $<
+
+AAL/Plastic_braker_machine/%.o: ../AAL/Plastic_braker_machine/%.c
 	@echo Building file: $<
 	@echo Invoking: AVR/GNU C Compiler : (AVR_8_bit_GNU_Toolchain_3.4.1_830) 4.6.2
 	$(QUOTE)C:\Program Files (x86)\Atmel\Atmel Studio 6.0\extensions\Atmel\AVRGCC\3.4.1.95\AVRToolchain\bin\avr-gcc.exe$(QUOTE) -funsigned-char -funsigned-bitfields -O1 -fpack-struct -fshort-enums -g2 -Wall -c -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"  -mmcu=atmega32a   -o"$@" "$<" 

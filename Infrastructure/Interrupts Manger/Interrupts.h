@@ -8,7 +8,8 @@
 
 #ifndef INTERRUPTS_H_
 #define INTERRUPTS_H_
-
+#include "../registers.h"
+#include "../std_types.h"
 extern volatile uint8_t u8Excution_to_be_done;
 extern void timer_interrupt(void);
 typedef void (*ptr_to_Fun)(void);

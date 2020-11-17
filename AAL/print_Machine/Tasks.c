@@ -115,7 +115,7 @@ void Read_Time_Task(void)
 if (st_u16_indix <3)
 {st_u16_indix++;}
 else{st_u16_indix=0;}
-Timing_arr[st_u16_indix]=(u16_ADC_readings_Channel[st_u16_indix])*2;
+Timing_arr[st_u16_indix]=(u16_ADC_readings_Channel[st_u16_indix])*3  ;
 
 
 }
@@ -216,7 +216,14 @@ if (counting_arr[0]==Timing_arr[0])
 	UartTransmitPooling('C');
 	UartTransmitPooling('0');
 	UartTransmitPooling('=');
+	uart_transmit_u16(Timing_arr[0]);
+	UartTransmitPooling('A');
+	UartTransmitPooling('D');
+	UartTransmitPooling('C');
+	UartTransmitPooling('0');
+	UartTransmitPooling('=');
 	uart_transmit_u16(counting_arr[0]);
+	UartTransmitPooling('\n');
 counting_arr[0]=0;
 u8_State_Machine=RELAY0_ACTION_DONE;
 }
@@ -231,7 +238,14 @@ UartTransmitPooling(' ');
 	UartTransmitPooling('C');
 	UartTransmitPooling('1');
 	UartTransmitPooling('=');
-uart_transmit_u16(counting_arr[1]);
+	uart_transmit_u16(Timing_arr[1]);
+	UartTransmitPooling('A');
+	UartTransmitPooling('D');
+	UartTransmitPooling('C');
+	UartTransmitPooling('1');
+	UartTransmitPooling('=');
+	uart_transmit_u16(counting_arr[1]);
+	UartTransmitPooling('\n');
 counting_arr[1]=0;
 u8_State_Machine=RELAY1_ACTION_DONE;
 }
@@ -241,14 +255,21 @@ if (counting_arr[2]==Timing_arr[2]&& u8_State_Machine==RELAY1_ACTION_DONE)
 	DIO_Write(GPIOD,BIT3,LOW);
 DIO_Toggle(GPIOD,BIT4);
 
-UartTransmitPooling(' ');
-UartTransmitPooling('A');
-UartTransmitPooling('D');
-UartTransmitPooling('C');
-UartTransmitPooling('2');
-UartTransmitPooling('=');
-uart_transmit_u16(counting_arr[2]);
-counting_arr[2]=0;
+	UartTransmitPooling(' ');
+	UartTransmitPooling('A');
+	UartTransmitPooling('D');
+	UartTransmitPooling('C');
+	UartTransmitPooling('2');
+	UartTransmitPooling('=');
+	uart_transmit_u16(Timing_arr[2]);
+	UartTransmitPooling('A');
+	UartTransmitPooling('D');
+	UartTransmitPooling('C');
+	UartTransmitPooling('2');
+	UartTransmitPooling('=');
+	uart_transmit_u16(counting_arr[2]);
+	UartTransmitPooling('\n');
+	counting_arr[2]=0;
 u8_State_Machine=RELAY2_ACTION_DONE;
 }
 if (u8_State_Machine == RELAY2_ACTION_DONE)

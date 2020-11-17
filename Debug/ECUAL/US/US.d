@@ -5,6 +5,8 @@ ECUAL/US/US.d ECUAL/US/US.o: ../ECUAL/US/US.c ../ECUAL/US/Us.h \
  ../ECUAL/US/../../MCAL/ICU/../../Infrastructure/Error.h \
  ../ECUAL/US/../../MCAL/ICU/../../Infrastructure/std_types.h \
  ../ECUAL/US/../../MCAL/ICU/../../Infrastructure/Interrupts\ Manger/Interrupts.h \
+ ../ECUAL/US/../../MCAL/ICU/../../Infrastructure/Interrupts\ Manger/../registers.h \
+ ../ECUAL/US/../../MCAL/ICU/../../Infrastructure/Interrupts\ Manger/../std_types.h \
  ../ECUAL/US/UsConfig.h ../ECUAL/US/../../MCAL/DIO/DIO_config.h \
  ../ECUAL/US/../../MCAL/DIO/../../Infrastructure/registers.h \
  ../ECUAL/US/../../MCAL/DIO/../../Infrastructure/Error.h \
@@ -31,6 +33,10 @@ ECUAL/US/US.d ECUAL/US/US.o: ../ECUAL/US/US.c ../ECUAL/US/Us.h \
 ../ECUAL/US/../../MCAL/ICU/../../Infrastructure/std_types.h:
 
 ../ECUAL/US/../../MCAL/ICU/../../Infrastructure/Interrupts\ Manger/Interrupts.h:
+
+../ECUAL/US/../../MCAL/ICU/../../Infrastructure/Interrupts\ Manger/../registers.h:
+
+../ECUAL/US/../../MCAL/ICU/../../Infrastructure/Interrupts\ Manger/../std_types.h:
 
 ../ECUAL/US/UsConfig.h:
 

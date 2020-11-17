@@ -73,6 +73,18 @@
     <Compile Include="AAL\car_sm\car_sm.h">
       <SubType>compile</SubType>
     </Compile>
+    <Compile Include="AAL\Plastic_braker_machine\plastic_braker.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="AAL\Plastic_braker_machine\plastic_braker.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="AAL\Plastic_braker_machine\plastic_braker_config.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="AAL\Plastic_braker_machine\plastic_braker_config.h">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="AAL\print_Machine\Tasks.c">
       <SubType>compile</SubType>
     </Compile>
@@ -332,6 +344,7 @@
   <ItemGroup>
     <Folder Include="AAL" />
     <Folder Include="AAL\car_sm" />
+    <Folder Include="AAL\Plastic_braker_machine" />
     <Folder Include="AAL\print_Machine" />
     <Folder Include="AAL\Steering" />
     <Folder Include="ECUAL\LCD" />

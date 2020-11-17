@@ -46,7 +46,6 @@ void EX_interrupt_enable1(void)
 	SET_BIT(GICR,INT1);
 	SET_BIT(MCUCR,2);/*Any logical change*/
 	CLEAR_BIT(MCUCR,3);
-	
 }
 void EX_interrupt_enable0(void)
 {

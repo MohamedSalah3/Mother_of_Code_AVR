@@ -11,6 +11,8 @@ SL/SOS/SOS.d SL/SOS/SOS.o: ../SL/SOS/SOS.c \
  ../SL/SOS/../../MCAL/PushButtons/../DIO/../../Infrastructure/Error.h \
  ../SL/SOS/../../MCAL/PushButtons/../DIO/../../Infrastructure/std_types.h \
  ../SL/SOS/../../MCAL/PushButtons/../DIO/../../Infrastructure/Interrupts\ Manger/Interrupts.h \
+ ../SL/SOS/../../MCAL/PushButtons/../DIO/../../Infrastructure/Interrupts\ Manger/../registers.h \
+ ../SL/SOS/../../MCAL/PushButtons/../DIO/../../Infrastructure/Interrupts\ Manger/../std_types.h \
  ../SL/SOS/SOS.h ../SL/SOS/SOS_Config.h \
  ../SL/SOS/../../Infrastructure/std_types.h \
  ../SL/SOS/../../MCAL/Timer/Timer.h \
@@ -60,6 +62,10 @@ SL/SOS/SOS.d SL/SOS/SOS.o: ../SL/SOS/SOS.c \
 ../SL/SOS/../../MCAL/PushButtons/../DIO/../../Infrastructure/std_types.h:
 
 ../SL/SOS/../../MCAL/PushButtons/../DIO/../../Infrastructure/Interrupts\ Manger/Interrupts.h:
+
+../SL/SOS/../../MCAL/PushButtons/../DIO/../../Infrastructure/Interrupts\ Manger/../registers.h:
+
+../SL/SOS/../../MCAL/PushButtons/../DIO/../../Infrastructure/Interrupts\ Manger/../std_types.h:
 
 ../SL/SOS/SOS.h:
 

@@ -11,7 +11,9 @@ ECUAL/MOTOR/Motor_Config.d ECUAL/MOTOR/Motor_Config.o: \
  ../ECUAL/MOTOR/../../MCAL/DIO/../../Infrastructure/registers.h \
  ../ECUAL/MOTOR/../../MCAL/DIO/../../Infrastructure/Error.h \
  ../ECUAL/MOTOR/../../MCAL/DIO/../../Infrastructure/std_types.h \
- ../ECUAL/MOTOR/../../MCAL/DIO/../../Infrastructure/Interrupts\ Manger/Interrupts.h
+ ../ECUAL/MOTOR/../../MCAL/DIO/../../Infrastructure/Interrupts\ Manger/Interrupts.h \
+ ../ECUAL/MOTOR/../../MCAL/DIO/../../Infrastructure/Interrupts\ Manger/../registers.h \
+ ../ECUAL/MOTOR/../../MCAL/DIO/../../Infrastructure/Interrupts\ Manger/../std_types.h
 
 ../ECUAL/MOTOR/Motor_Config.h:
 
@@ -38,3 +40,7 @@ ECUAL/MOTOR/Motor_Config.d ECUAL/MOTOR/Motor_Config.o: \
 ../ECUAL/MOTOR/../../MCAL/DIO/../../Infrastructure/std_types.h:
 
 ../ECUAL/MOTOR/../../MCAL/DIO/../../Infrastructure/Interrupts\ Manger/Interrupts.h:
+
+../ECUAL/MOTOR/../../MCAL/DIO/../../Infrastructure/Interrupts\ Manger/../registers.h:
+
+../ECUAL/MOTOR/../../MCAL/DIO/../../Infrastructure/Interrupts\ Manger/../std_types.h:

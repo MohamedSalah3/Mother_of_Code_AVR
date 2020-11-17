@@ -29,60 +29,75 @@ ERROR_STATUS ADC_INIT(ADC_Cfg_s *ADC_info)
 }
 void ADC_Read0(void)
 {
+	uint8_t low_adc=0;
 	ADC_INIT(&ADC_Cnfiguration0);
 	ADCSRA |= 0x40;
 	while (!(READBIT(ADCSRA,ADIF)));
-	u16_ADC_readings_Channel[0]  = (ADCL + (ADCH << 8));
+	low_adc=ADCL;
+	u16_ADC_readings_Channel[0]  = (low_adc + (ADCH << 8));
 
 }
 void ADC_Read1(void){
+	uint8_t low_adc=0;
 	ADC_INIT(&ADC_Cnfiguration1);
 	ADCSRA |= 0x40;
 	while (!(READBIT(ADCSRA,ADIF)));
-	u16_ADC_readings_Channel[1]  =(ADCL + (ADCH << 8));
+	low_adc=ADCL;
+	u16_ADC_readings_Channel[1]  =(low_adc + (ADCH << 8));
 }
 void ADC_Read2(void){
+	uint8_t low_adc=0;
 	ADC_INIT(&ADC_Cnfiguration2);
 	ADCSRA |= 0x40;
 	while (!(READBIT(ADCSRA,ADIF)));
-	u16_ADC_readings_Channel[2]  = (ADCL + (ADCH << 8));
+	u16_ADC_readings_Channel[2]  = (low_adc + (ADCH << 8));
 }
 void ADC_Read3(void)
 {
+	uint8_t low_adc=0;
 ADC_INIT(&ADC_Cnfiguration3);
 ADCSRA |= 0x40;
 while (!(READBIT(ADCSRA,ADIF)));
-u16_ADC_readings_Channel[3]  = (ADCL + (ADCH << 8));
+low_adc=ADCL;
+u16_ADC_readings_Channel[3]  = (low_adc + (ADCH << 8));
 }
 void ADC_Read4(void)
 {
+	uint8_t low_adc=0;
 	ADC_INIT(&ADC_Cnfiguration4);
 	ADCSRA |= 0x40;
 	while (!(READBIT(ADCSRA,ADIF)));
-	u16_ADC_readings_Channel[4]  =(ADCL + (ADCH << 8));
+	low_adc=ADCL;
+	u16_ADC_readings_Channel[4]  =(low_adc + (ADCH << 8));
 
 }
 void ADC_Read5(void)
 {
+	uint8_t low_adc=0;
 ADC_INIT(&ADC_Cnfiguration5);
 ADCSRA |= 0x40;
 while (!(READBIT(ADCSRA,ADIF)));
-u16_ADC_readings_Channel[5]  = (ADCL + (ADCH << 8));
+low_adc=ADCL;
+u16_ADC_readings_Channel[5]  = (low_adc + (ADCH << 8));
 }
 
 void ADC_Read6(void)
 {
+	uint8_t low_adc=0;
 	ADC_INIT(&ADC_Cnfiguration6);
 	ADCSRA |= 0x40;
 	while (!(READBIT(ADCSRA,ADIF)));
-	u16_ADC_readings_Channel[6]  = (ADCL + (ADCH << 8));
+	low_adc=ADCL;
+	u16_ADC_readings_Channel[6]  = (low_adc + (ADCH << 8));
 }
 void ADC_Read7(void)
 {
+	uint8_t low_adc=0;
 ADC_INIT(&ADC_Cnfiguration7);
 ADCSRA |= 0x40;
 while (!(READBIT(ADCSRA,ADIF)));
-u16_ADC_readings_Channel[7]  = (ADCL + (ADCH << 8));
+low_adc=ADCL;
+u16_ADC_readings_Channel[7]  = (low_adc + (ADCH << 8));
 }
 void adc_read(void){
 	if (arr_counter_of_ptr < 8)

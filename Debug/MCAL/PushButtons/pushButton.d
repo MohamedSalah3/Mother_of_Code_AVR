@@ -9,7 +9,9 @@ MCAL/PushButtons/pushButton.d MCAL/PushButtons/pushButton.o: \
  ../MCAL/PushButtons/../DIO/../../Infrastructure/registers.h \
  ../MCAL/PushButtons/../DIO/../../Infrastructure/Error.h \
  ../MCAL/PushButtons/../DIO/../../Infrastructure/std_types.h \
- ../MCAL/PushButtons/../DIO/../../Infrastructure/Interrupts\ Manger/Interrupts.h
+ ../MCAL/PushButtons/../DIO/../../Infrastructure/Interrupts\ Manger/Interrupts.h \
+ ../MCAL/PushButtons/../DIO/../../Infrastructure/Interrupts\ Manger/../registers.h \
+ ../MCAL/PushButtons/../DIO/../../Infrastructure/Interrupts\ Manger/../std_types.h
 
 ../MCAL/PushButtons/pushButton.h:
 
@@ -34,3 +36,7 @@ MCAL/PushButtons/pushButton.d MCAL/PushButtons/pushButton.o: \
 ../MCAL/PushButtons/../DIO/../../Infrastructure/std_types.h:
 
 ../MCAL/PushButtons/../DIO/../../Infrastructure/Interrupts\ Manger/Interrupts.h:
+
+../MCAL/PushButtons/../DIO/../../Infrastructure/Interrupts\ Manger/../registers.h:
+
+../MCAL/PushButtons/../DIO/../../Infrastructure/Interrupts\ Manger/../std_types.h:

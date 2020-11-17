@@ -9,6 +9,8 @@ AAL/print_Machine/Tasks.d AAL/print_Machine/Tasks.o: \
  ../AAL/print_Machine/../../MCAL/ADC/../DIO/../../Infrastructure/Error.h \
  ../AAL/print_Machine/../../MCAL/ADC/../DIO/../../Infrastructure/std_types.h \
  ../AAL/print_Machine/../../MCAL/ADC/../DIO/../../Infrastructure/Interrupts\ Manger/Interrupts.h \
+ ../AAL/print_Machine/../../MCAL/ADC/../DIO/../../Infrastructure/Interrupts\ Manger/../registers.h \
+ ../AAL/print_Machine/../../MCAL/ADC/../DIO/../../Infrastructure/Interrupts\ Manger/../std_types.h \
  ../AAL/print_Machine/../../Infrastructure/Interrupts\ Manger/Interrupts.h \
  ../AAL/print_Machine/../../MCAL/PushButtons/pushButton.h \
  ../AAL/print_Machine/../../MCAL/PushButtons/pushButtonConfig.h \
@@ -45,6 +47,10 @@ AAL/print_Machine/Tasks.d AAL/print_Machine/Tasks.o: \
 ../AAL/print_Machine/../../MCAL/ADC/../DIO/../../Infrastructure/std_types.h:
 
 ../AAL/print_Machine/../../MCAL/ADC/../DIO/../../Infrastructure/Interrupts\ Manger/Interrupts.h:
+
+../AAL/print_Machine/../../MCAL/ADC/../DIO/../../Infrastructure/Interrupts\ Manger/../registers.h:
+
+../AAL/print_Machine/../../MCAL/ADC/../DIO/../../Infrastructure/Interrupts\ Manger/../std_types.h:
 
 ../AAL/print_Machine/../../Infrastructure/Interrupts\ Manger/Interrupts.h:
 

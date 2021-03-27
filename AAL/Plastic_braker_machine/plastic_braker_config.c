@@ -31,7 +31,7 @@ DIO_Cfg_s Dio_D_ALARM =
 DIO_Cfg_s Dio_B_MOTOR =
 {
 		GPIOB,
-		BIT4|BIT5,
+		BIT4|BIT5|BIT6|BIT7,
 		OUTPUT
 };
 	

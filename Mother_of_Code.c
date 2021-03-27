@@ -10,7 +10,7 @@
 #include "MCAL/uart_Send.h"
 /*Badawy machine init */
 static uint8_t u8_plastic_state = NO_ACTION_PLAS;
-static uint16_t u16_delay = 0 ;
+static uint16_t u16_delay = 0;
 
 void badawy_machine_init(void)
 {
@@ -50,12 +50,13 @@ void plastic_breaker_loop(void)
 		u16_delay++;
 		DIO_Write(GPIOB, BIT4, LOW);
 		DIO_Write(GPIOB, BIT5, HIGH);
-				DIO_Write(GPIOB, BIT7, LOW);
+		DIO_Write(GPIOB, BIT7, LOW);
 		DIO_Write(GPIOB, BIT6, HIGH);
 		u8_plastic_state = MOTOR_WORKING_STAR;
 	}
-	if ((sw2_state == HIGH && sw1_state == HIGH && off_state == LOW && on_state == HIGH) && (u8_plastic_state == SECOND_SAFE_POS) &&(u8_plastic_state==MOTOR_WORKING_STAR && u16_delay >= 1000))
-	{	u16_delay=0;
+	if ((sw2_state == HIGH && sw1_state == HIGH && off_state == LOW && on_state == HIGH) && (u8_plastic_state == SECOND_SAFE_POS) && (u8_plastic_state == MOTOR_WORKING_STAR && u16_delay >= 1000))
+	{
+		u16_delay = 0;
 		/*MOTOR_WORKING_START*/
 		//SwDelay_ms(3000);
 		DIO_Write(GPIOB, BIT4, LOW);
@@ -63,20 +64,18 @@ void plastic_breaker_loop(void)
 		DIO_Write(GPIOB, BIT6, LOW);
 		DIO_Write(GPIOB, BIT7, HIGH);
 		u8_plastic_state = MOTOR_WORKING_DELTA;
-	
 	}
 
-		if (((u8_plastic_state == MOTOR_WORKING_DELTA || u8_plastic_state == MOTOR_WORKING_STAR) && (off_state == HIGH)) || ((u8_plastic_state == MOTOR_WORKING_DELTA || u8_plastic_state == MOTOR_WORKING_STAR) && (sw1_state == LOW || sw2_state == LOW)))
-		{
+	if (((u8_plastic_state == MOTOR_WORKING_DELTA || u8_plastic_state == MOTOR_WORKING_STAR) && (off_state == HIGH)) || ((u8_plastic_state == MOTOR_WORKING_DELTA || u8_plastic_state == MOTOR_WORKING_STAR) && (sw1_state == LOW || sw2_state == LOW)))
+	{
 
-			/*turn off the machine*/
-			DIO_Write(GPIOB, BIT4, LOW);
-			DIO_Write(GPIOB, BIT5, LOW);
-			DIO_Write(GPIOB, BIT6, LOW);
-			DIO_Write(GPIOB, BIT7, LOW);
-			u8_plastic_state = NO_ACTION_PLAS;
-		}
-	
+		/*turn off the machine*/
+		DIO_Write(GPIOB, BIT4, LOW);
+		DIO_Write(GPIOB, BIT5, LOW);
+		DIO_Write(GPIOB, BIT6, LOW);
+		DIO_Write(GPIOB, BIT7, LOW);
+		u8_plastic_state = NO_ACTION_PLAS;
+	}
 }
 
 void alarm_flashing(void)
@@ -111,7 +110,7 @@ int main(void)
 {
 	plastic_breaker_init();
 	/*badawy_machine_init();*/
-	
+
 	while (1)
 	{
 		SOS_Run();
